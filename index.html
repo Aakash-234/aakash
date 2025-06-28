@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakash Bhagat - Entrepreneur | Engineer | Innovator</title>
+    <meta name="description" content="Portfolio of Aakash Bhagat - Entrepreneur, Engineer, and Innovator with experience in healthtech, VR, and financial technology">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Minimap -->
+    <div class="minimap" id="minimap" aria-label="Page progress">
+        <div class="minimap-item" data-section="hero">Start Grid</div>
+        <div class="minimap-item" data-section="education">Monaco</div>
+        <div class="minimap-item" data-section="startup">Silverstone</div>
+        <div class="minimap-item" data-section="experience">Spa</div>
+        <div class="minimap-item" data-section="achievements">Suzuka</div>
+        <div class="minimap-item" data-section="skills">Pit Lane</div>
+        <div class="minimap-item" data-section="contact">Final Lap</div>
+    </div>
+
+    <!-- F1 Car Animation -->
+    <div class="f1-car" id="f1-car" aria-hidden="true">
+        <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 18C2 16.8954 2.89543 16 4 16H36C37.1046 16 38 16.8954 38 18V18C38 19.1046 37.1046 20 36 20H4C2.89543 20 2 19.1046 2 18V18Z" fill="#FF4D4D"/>
+            <path d="M8 12C8 10.8954 8.89543 10 10 10H30C31.1046 10 32 10.8954 32 12V14H8V12Z" fill="#FF4D4D"/>
+            <path d="M12 6C12 4.89543 12.8954 4 14 4H26C27.1046 4 28 4.89543 28 6V8H12V6Z" fill="#FF4D4D"/>
+            <circle cx="10" cy="16" r="2" fill="#222"/>
+            <circle cx="30" cy="16" r="2" fill="#222"/>
+            <path d="M14 2H26V4H14V2Z" fill="#FF4D4D"/>
+        </svg>
+    </div>
+
+    <!-- Circuit SVG Path -->
+    <svg class="circuit-path" width="100%" height="100%" viewBox="0 0 1200 3000" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="trackPath" d="M600 100 Q650 200 600 300 Q550 400 600 500 Q650 600 600 700 Q550 800 600 900 Q650 1000 600 1100 Q550 1200 600 1300 Q650 1400 600 1500 Q550 1600 600 1700 Q650 1800 600 1900 Q550 2000 600 2100 Q650 2200 600 2300 Q550 2400 600 2500 Q650 2600 600 2700 Q550 2800 600 2900" stroke="#FF4D4D" stroke-width="3" fill="none" opacity="0.3"/>
+    </svg>
+
+    <main>
+        <!-- Hero Section - Monza Start Grid -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <!-- TODO: Replace with your actual photo -->
+                        <div class="profile-photo" role="img" aria-label="Aakash Bhagat profile photo">
+                            <img src="https://via.placeholder.com/300x300/FF4D4D/FFFFFF?text=Upload+Your+Photo" alt="Aakash Bhagat" id="profile-img">
+                            <div class="photo-ring"></div>
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <h1 id="hero-title">Aakash Bhagat</h1>
+                        <div class="typewriter-container">
+                            <p class="typewriter-text" id="typewriter">Entrepreneur | Engineer | Innovator</p>
+                            <div class="racing-flag-underline"></div>
+                        </div>
+                        <p class="hero-description">
+                            Founding member of Meerahi healthtech startup. Exploring new ideas and looking to join passionate teams in their 0→1 journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-label">Start Grid - Monza</div>
+        </section>
+
+        <!-- Education Section - Monaco -->
+        <section id="education" class="education-section" aria-labelledby="education-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="education-title">Education</h2>
+                    <div class="track-name">Monaco Street Circuit</div>
+                </div>
+                <div class="education-content">
+                    <div class="education-card">
+                        <div class="education-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1749533436/pplx_project_search_images/51a8e6153fbe532a97bdaf74ceb702968f9dd83c.jpg" alt="BITS Pilani campus with iconic clock tower" class="bits-image">
+                        </div>
+                        <div class="education-details">
+                            <h3>BITS Pilani</h3>
+                            <p class="institution-tagline">Institution of Eminence • Ranked 25th in NIRF 2023</p>
+                            <div class="degree-info">
+                                <h4>B.E.(Hons.) Electrical & Electronics + M.Sc.(Hons.) Mathematics</h4>
+                                <div class="grades">
+                                    <div class="grade-item">
+                                        <span class="grade-label">Overall GPA</span>
+                                        <span class="grade-value">6.6 / 10</span>
+                                    </div>
+                                    <div class="grade-item">
+                                        <span class="grade-label">Finance Minor</span>
+                                        <span class="grade-value">8 / 10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="bits-description">
+                                One of India's premier technical institutions, BITS Pilani has produced leaders in technology, entrepreneurship, and innovation across the globe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Startup Section - Silverstone -->
+        <section id="startup" class="startup-section" aria-labelledby="startup-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="startup-title">Meerahi</h2>
+                    <div class="track-name">Silverstone Circuit</div>
+                </div>
+                <div class="startup-content">
+                    <div class="startup-card glass-card">
+                        <div class="startup-stats">
+                            <div class="stat-item">
+                                <div class="stat-value" data-counter="100000">$0</div>
+                                <div class="stat-label">Funding Raised</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value" data-counter="1000000">$0</div>
+                                <div class="stat-label">Valuation</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value" data-counter="90">0%</div>
+                                <div class="stat-label">User Satisfaction</div>
+                            </div>
+                        </div>
+                        <div class="startup-description">
+                            <p>
+                                Founding member of Meerahi, a healthtech startup that used VR to deliver immersive therapy for mental health, 
+                                blending CBT, EMDR, and DBT into clinically-informed experiences.
+                            </p>
+                            <p>
+                                We raised $100K from a VC and built early B2B traction, but decided to wind it down due to 
+                                co-founder alignment and college commitments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section - Spa-Francorchamps -->
+        <section id="experience" class="experience-section" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="experience-title">Experience & Leadership</h2>
+                    <div class="track-name">Spa-Francorchamps</div>
+                </div>
+                <div class="experience-carousel">
+                    <div class="experience-card">
+                        <h3>Data Intern</h3>
+                        <h4>The Economic Times</h4>
+                        <p>30% sales boost via SQL CRM optimization</p>
+                        <div class="card-accent"></div>
+                    </div>
+                    <div class="experience-card">
+                        <h3>AI Analyst</h3>
+                        <h4>Shalaka Research</h4>
+                        <p>35% projected sales increase via demand forecasting</p>
+                        <div class="card-accent"></div>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Executive Head</h3>
+                        <h4>Dept. of External Affairs, BITS</h4>
+                        <p>300+ sponsors, doubled revenue</p>
+                        <div class="card-accent"></div>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Program Lead</h3>
+                        <h4>Nirmann NGO</h4>
+                        <p>1.5M beneficiaries, 50k students digitally literate</p>
+                        <div class="card-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section - Suzuka -->
+        <section id="achievements" class="achievements-section" aria-labelledby="achievements-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="achievements-title">Achievements</h2>
+                    <div class="track-name">Suzuka Circuit</div>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🏆</div>
+                        <h3>Hult Prize Regional Winner</h3>
+                        <p>Top 360 startups globally</p>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🎓</div>
+                        <h3>Yale Young Global Scholar</h3>
+                        <p>Selective program (<15% acceptance)</p>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🥉</div>
+                        <h3>Case Heist 3rd Place</h3>
+                        <p>CMS Business Case Competition</p>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🎯</div>
+                        <h3>MDI National Top 8</h3>
+                        <p>National level competition</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section - Pit Lane -->
+        <section id="skills" class="skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="skills-title">Skills</h2>
+                    <div class="track-name">Pit Lane</div>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-pill">Python</div>
+                    <div class="skill-pill">Machine Learning</div>
+                    <div class="skill-pill">SQL</div>
+                    <div class="skill-pill">Finance</div>
+                    <div class="skill-pill">Leadership</div>
+                    <div class="skill-pill">Power BI</div>
+                    <div class="skill-pill">VR Development</div>
+                    <div class="skill-pill">Data Analysis</div>
+                    <div class="skill-pill">Strategic Planning</div>
+                    <div class="skill-pill">Team Management</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section - Final Lap -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-title">Contact & Final Lap</h2>
+                    <div class="track-name">Checkered Flag</div>
+                </div>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        Ready to build something meaningful from the ground up? Let's connect and explore opportunities.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:contact@aakashbhagat.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">📧</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://linkedin.com/in/aakashbhagat" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="checkered-flag" id="checkered-flag" aria-hidden="true"></div>
+                <div class="confetti" id="confetti" aria-hidden="true"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
